@@ -7,7 +7,7 @@ aws ec2 describe-instances --region ap-south-1 | jq '.Reservations[].Instances.[
 
 echo "CPU USAGE"
 echo
-top -bn | grep "CPU's";
+top -bn1 | grep "CPU's";
 echo
 
 echo "MEMORY USAGE"
